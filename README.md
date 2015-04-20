@@ -1,25 +1,50 @@
-# Ember-cli-fauxjax
-
-This README outlines the details of collaborating on this Ember addon.
+# ember-cli-fauxjax
+Simple wrapper for fauxjax.js
 
 ## Installation
 
-* `git clone` this repository
-* `npm install`
-* `bower install`
+```ember install:addon ember-cli-fauxjax --save-dev```
 
-## Running
+## Setup
 
-* `ember server`
-* Visit your app at http://localhost:4200.
+You can then import fauxjax in your tests:
 
-## Running Tests
+```javascript
+import fauxjax from 'ember-cli-fauxjax';
+```
+```javascript
+GET request
+var faux = fauxjax()
+var json = [1, 2];
+faux.GET('/faux-request', json);
+```
 
-* `ember test`
-* `ember test --server`
+```javascript
+POST request
+var faux = fauxjax()
+var json = {success: true};
+faux.POST('/faux-request', json);
+```
 
-## Building
+```javascript
+Setting defaults
+var faux = fauxjax({status: 201})
+var json = {success: true};
+faux.POST('/faux-request', json);
+```
 
-* `ember build`
+```javascript
+Clear All Fauxjax Handlers
+var faux = fauxjax()
+faux.clear()
+```
 
-For more information on using ember-cli, visit [http://www.ember-cli.com/](http://www.ember-cli.com/).
+```javascript
+Remove a Single Fauxjax Handler
+var faux = fauxjax()
+var id = faux.GET('/faux-request', [1, 2]);
+faux.remove(id)
+```
+
+see: [JarrodCTaylor/fauxjax](https://github.com/JarrodCTaylor/fauxjax) for fauxjax
+docs

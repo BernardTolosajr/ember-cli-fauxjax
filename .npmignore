@@ -1,5 +1,10 @@
 bower_components/
 tests/
+tmp/
+dist/
+
+/tmp
+/dist
 
 .bowerrc
 .editorconfig
@@ -10,5 +15,3 @@ tests/
 bower.json
 Brocfile.js
 testem.json
-/temp
-temp/

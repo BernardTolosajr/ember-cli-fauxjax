@@ -26,5 +26,26 @@ var json = {success: true};
 faux.POST('/faux-request', json);
 ```
 
+```javascript
+Setting defaults
+var faux = fauxjax({status: 201})
+var json = {success: true};
+faux.POST('/faux-request', json);
+```
+
+```javascript
+Clear All Fauxjax Handlers
+var faux = fauxjax()
+faux.clear()
+```
+
+```javascript
+Remove a Single Fauxjax Handler
+var faux = fauxjax()
+var id = faux.GET('/faux-request', [1, 2]);
+faux.remove(id)
+```
+
+
 see: [JarrodCTaylor/fauxjax](https://github.com/JarrodCTaylor/fauxjax) for fauxjax
 docs

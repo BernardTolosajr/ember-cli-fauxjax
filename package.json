@@ -12,11 +12,11 @@
     "build": "ember build",
     "test": "ember test"
   },
-  "repository": "",
+  "repository": "https://github.com/BernardTolosajr/ember-cli-fauxjax",
   "engines": {
     "node": ">= 0.10.0"
   },
-  "author": "",
+  "author": "bt",
   "license": "MIT",
   "devDependencies": {
     "broccoli-asset-rev": "^2.0.0",

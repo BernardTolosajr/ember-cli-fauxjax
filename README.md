@@ -5,5 +5,25 @@ Simple wrapper for fauxjax.js
 
 ```ember install:addon ember-cli-fauxjax --save-dev```
 
+## Setup
+
+You can then import fauxjax in your tests:
+
+```javascript
+import faxjax from 'ember-cli-fauxjax';
+
+GET request
+
+var faux = fauxjax()
+var json = [1, 2];
+faux.GET('/faux-request', json);
+
+POST request
+
+var faux = fauxjax()
+var json = {success: true};
+faux.POST('/faux-request', json);
+
+
 see: [JarrodCTaylor/fauxjax](https://github.com/JarrodCTaylor/fauxjax) for fauxjax
 docs

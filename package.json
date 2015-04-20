@@ -12,7 +12,11 @@
     "build": "ember build",
     "test": "ember test"
   },
-  "repository": "https://github.com/BernardTolosajr/ember-cli-fauxjax",
+  "repository": {
+    "type": "git",
+    "url":"https://github.com/BernardTolosajr/ember-cli-fauxjax"
+  },
+  "bugs": "https://github.com/BernardTolosajr/ember-cli-fauxjax/issues",
   "engines": {
     "node": ">= 0.10.0"
   },

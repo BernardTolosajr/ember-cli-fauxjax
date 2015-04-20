@@ -20,7 +20,7 @@
   "engines": {
     "node": ">= 0.10.0"
   },
-  "author": "bernardtolosa bernardotolosajr@gmail.com",
+  "author": "bernardtolosa <bernardotolosajr@gmail.com>",
   "license": "MIT",
   "devDependencies": {
     "broccoli-asset-rev": "^2.0.0",

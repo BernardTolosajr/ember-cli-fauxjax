@@ -10,4 +10,5 @@ tests/
 bower.json
 Brocfile.js
 testem.json
+/temp
 temp/

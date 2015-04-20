@@ -3,7 +3,7 @@ Simple wrapper for fauxjax.js
 
 ## Installation
 
-```npm install ember-cli-fauxjax --save-dev```
+```ember install:addon ember-cli-fauxjax```
 
 ## Setup
 

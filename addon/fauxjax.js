@@ -5,12 +5,12 @@ export default function Fauxjax(options) {
 
   $.fauxjax.settings = {
     status:        options.status || 200,
-    statusText:    "OK",
-    responseTime:  0,
-    isTimeout:     false,
-    content:  '',
-    headers:       {},
-    strictMatching: true
+    statusText:    options.statusText || "OK",
+    responseTime:  options.responseTime || 0,
+    isTimeout:     options.isTimeout  || false,
+    content:       options.content || '',
+    headers:       options.headers || {},
+    strictMatching: options.strictMatching || true
   };
 
   function faux(request, json) {

@@ -10,7 +10,7 @@ Simple wrapper for fauxjax.js
 You can then import fauxjax in your tests:
 
 ```javascript
-import faxjax from 'ember-cli-fauxjax';
+import fauxjax from 'ember-cli-fauxjax';
 ```
 ```javascript
 GET request

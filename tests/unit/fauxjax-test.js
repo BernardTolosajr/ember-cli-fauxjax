@@ -42,7 +42,7 @@ test('POST request', function(assert) {
       .once()
       .withArgs({request: {
         url: url,
-        method: 'POST',
+        type: 'POST',
         data: options.data
        }, response: {
         content: json
@@ -56,7 +56,7 @@ test('PUT request', function(assert) {
   assert.expect(0);
   mock.expects('new')
       .once()
-      .withArgs({request: {url: url, method: 'PUT'}, response: {content: json}});
+      .withArgs({request: {url: url, type: 'PUT'}, response: {content: json}});
 
   faux.PUT(url, json);
   mock.verify();
@@ -66,7 +66,7 @@ test('DELETE request', function(assert) {
   assert.expect(0);
   mock.expects('new')
       .once()
-      .withArgs({request: {url: url, method: 'DELETE'}, response: {content: json}});
+      .withArgs({request: {url: url, type: 'DELETE'}, response: {content: json}});
 
   faux.DELETE(url, json);
   mock.verify();

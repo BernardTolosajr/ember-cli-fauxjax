@@ -23,7 +23,8 @@ faux.GET('/faux-request', json);
 POST request
 var faux = fauxjax()
 var json = {success: true};
-faux.POST('/faux-request', json);
+var options = {data: {a: 'b'}, json: json};
+faux.POST('/faux-request', options);
 ```
 
 ```javascript

@@ -30,7 +30,7 @@ var fauxjax = function Fauxjax(options) {
     POST: function(url, options) {
       var request = {
         url: url,
-        method: 'POST',
+        type: 'POST',
         data: options.data || ''
       };
 
@@ -40,7 +40,7 @@ var fauxjax = function Fauxjax(options) {
     PUT: function(url, json) {
       var request = {
         url: url,
-        method: 'PUT'
+        type: 'PUT'
       };
 
       return faux(request, json);
@@ -49,7 +49,7 @@ var fauxjax = function Fauxjax(options) {
     DELETE: function(url, json) {
       var request = {
         url: url,
-        method: 'DELETE'
+        type: 'DELETE'
       };
 
       return faux(request, json);

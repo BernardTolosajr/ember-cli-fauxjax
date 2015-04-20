@@ -2,6 +2,7 @@
   "name": "ember-cli-fauxjax",
   "version": "0.0.0",
   "description": "The default blueprint for ember-cli addons.",
+  "main": "index.js",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -30,10 +31,12 @@
     "ember-cli-qunit": "0.3.9",
     "ember-cli-uglify": "1.0.1",
     "ember-data": "1.0.0-beta.15",
-    "ember-export-application-global": "^1.0.2"
+    "ember-export-application-global": "^1.0.2",
+    "ember-sinon": "0.0.3"
   },
   "keywords": [
-    "ember-addon"
+    "ember-addon",
+    "fauxjax"
   ],
   "ember-addon": {
     "configPath": "tests/dummy/config"

@@ -1,7 +1,7 @@
 {
   "name": "ember-cli-fauxjax",
   "version": "0.0.1",
-  "description": "The default blueprint for ember-cli addons.",
+  "description": "Simple wrapper for fauxjax",
   "main": "index.js",
   "directories": {
     "doc": "doc",
@@ -36,6 +36,7 @@
   },
   "keywords": [
     "ember-addon",
+    "testing",
     "fauxjax"
   ],
   "ember-addon": {

@@ -16,6 +16,7 @@ module('fauxjax', {
   },
 
   afterEach: function() {
+    faux.clear();
     mock.restore();
   }
 });
@@ -24,7 +25,7 @@ test('GET request', function(assert) {
   assert.expect(0);
   mock.expects('new')
       .once()
-      .withArgs({request: {url: url, method: 'GET'}, response: {content: json}});
+      .withArgs({request: {url: url}, response: {content: json}});
 
   faux.GET(url, json);
   mock.verify();
@@ -32,11 +33,22 @@ test('GET request', function(assert) {
 
 test('POST request', function(assert) {
   assert.expect(0);
+  var options = {
+    data: {data: '1'},
+    json: json
+  };
+
   mock.expects('new')
       .once()
-      .withArgs({request: {url: url, method: 'POST'}, response: {content: json}});
+      .withArgs({request: {
+        url: url,
+        method: 'POST',
+        data: options.data
+       }, response: {
+        content: json
+       }});
 
-  faux.POST(url, json);
+  faux.POST(url, options);
   mock.verify();
 });
 

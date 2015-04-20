@@ -1,6 +1,7 @@
 import $ from 'jquery';
 
-export default function Fauxjax(options) {
+var fauxjax = function Fauxjax(options) {
+  'use strict';
   options = options || {};
 
   $.fauxjax.settings = {
@@ -20,20 +21,20 @@ export default function Fauxjax(options) {
   return {
     GET: function(url, json) {
       var request = {
-        url: url,
-        method: 'GET'
+        url: url
       };
 
       return faux(request, json);
     },
 
-    POST: function(url, json) {
+    POST: function(url, options) {
       var request = {
         url: url,
-        method: 'POST'
+        method: 'POST',
+        data: options.data || ''
       };
 
-      return faux(request, json);
+      return faux(request, options.json);
     },
 
     PUT: function(url, json) {
@@ -62,4 +63,6 @@ export default function Fauxjax(options) {
       $.fauxjax.remove(id);
     }
   };
-}
+};
+
+export default fauxjax;

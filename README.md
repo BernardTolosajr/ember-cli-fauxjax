@@ -31,7 +31,8 @@ faux.POST('/faux-request', options);
 Setting defaults
 var faux = fauxjax({status: 201})
 var json = {success: true};
-faux.POST('/faux-request', json);
+var options = {data: {a: 'b'}, json: json};
+faux.POST('/faux-request', options);
 ```
 
 ```javascript

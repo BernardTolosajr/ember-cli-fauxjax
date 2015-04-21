@@ -1,7 +1,7 @@
 # ember-cli-fauxjax
 Simple wrapper for fauxjax.js
 
-https://travis-ci.org/BernardTolosajr/ember-cli-fauxjax.svg?branch=master
+[![Build Status](https://travis-ci.org/BernardTolosajr/ember-cli-fauxjax.svg?branch=master)](https://travis-ci.org/BernardTolosajr/ember-cli-fauxjax)
 
 ## Installation
 
